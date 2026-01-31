@@ -6,6 +6,14 @@ module.exports = {
       fontFamily:{
       "Tions":"Tinos",
       
+      },
+      fontSize:{
+       besar:'200px', 
+       bintang:'10px',
+      },
+      backgroundImage: {
+        kucing: 'url("Practice/kucing.jpeg")',
+        freaky: 'url("practice/freaky.jfif:)'
       }
     },
   },
