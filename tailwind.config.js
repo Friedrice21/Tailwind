@@ -13,7 +13,8 @@ module.exports = {
       },
       backgroundImage: {
         kucing: 'url("Practice/kucing.jpeg")',
-        freaky: 'url("practice/freaky.jfif:)'
+        freaky: 'url("practice/freaky.jfif:)',
+        OIP: 'url("Practice2/OIP.jfif")'
       }
     },
   },
