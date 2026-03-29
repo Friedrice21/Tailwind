@@ -14,7 +14,8 @@ module.exports = {
       backgroundImage: {
         kucing: 'url("Practice/kucing.jpeg")',
         freaky: 'url("practice/freaky.jfif:)',
-        OIP: 'url("Practice2/OIP.jfif")'
+        OIP: 'url("Practice2/OIP.jfif")',
+        man: 'url("Practice 6 filter/Challenge/man.jfif")'
       }
     },
   },
