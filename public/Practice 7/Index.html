@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Hover -->
+     <button class="ml-40 mt-20  bg-sky-500 hover:bg-sky-700 hover:text-red-300 w-[100px] h-[100px]">Save Changes</button>
+     <!-- Focus -->
+      <button class="bg-sky-500 focus:bg-green-400">Save Changes</button>
+      <!-- Active -->
+       <button class="bg-sky-500 active:bg-red-700">Save Changes</button>
+       <!-- Form States -->
+        <!-- Required -->
+        <form action="">
+            <label for="email" class="">
+                <span class="">Username</span>
+                <input 
+                required 
+                type="email"
+                id="email"
+                class="block w-full rounded border px-3 py-2 text-sm shadow required:bg-red-400"
+                placeholder="masukan email"/>
+            </label>
+        </form>
+        <!-- Invalid -->
+         <input 
+         type="email"
+         id="email"
+         class="block w-full rounded border px-3 py-2 text-sm shadow invalid:text-red-500"
+         placeholder="masukan email"/>
+         <!-- Disabled -->
+          <input 
+          disabled
+          type="email"
+          id="email"
+          class="block w-full rounded border px-3 py-2 text-sm shadow disabled:bg-red-500 disabled:placeholder:text-blue-500"
+          placeholder="masukan password"/>
+          <!-- Styling based on parent state -->
+           <div class="group/parent mx-auto mt-20 h-40 w-40 bg-black pt-5">
+            <div class="group/child mx-auto h-20 w-20 bg-sky-50 group-active:bg-green-400">
+                <div class="group-hover/child:bg-yellow-200 h-10 w-10 bg-red-200 mx-auto">
+
+                </div>
+            </div>
+           </div>
+           <!-- Styling based on sibling state -->
+            <div>
+                <div class="peer h-20 w-20 bg-green-200"></div>
+                <div class="h-20 w-20 bg-red-200 peer-hover:bg-gray-900 invisible peer-hover:visible"></div>
+            </div>
+            <!-- Styling direct children -->
+             <div class="mt-20 flex justify-evenly bg-yellow-500/75 *:h-20 *:w-20 *:bg-red-500">
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>
+</body>
+</html>
