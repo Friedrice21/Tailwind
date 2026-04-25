@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body class="mt-10 bg-white dark:bg-black dark:text-white">
+    <div class="flex justify-center">
+        <div class="mr-3 text-sm">Light</div>
+        <input type="checkbox" id="geser" class="hidden">
+        <label for="geser">
+            <div class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 p-1"></div>
+        <div class="-ml-[3px] h-4 w-4 rounded-full bg-white dark:translate-x-3"></div>
+        </label>
+        <span class="ml-3 text-sm">Dark</span>
+    </div>
+    <div class="flex items-center justify-center gap-1">
+        <!-- svg matahari, ambil code di hero-icon -->
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+</svg>
+<button class="h-5 w-10 rounded-full bg-slate-500 p-0.5"></button>
+<div class="h-4 w-4 rounded-full bg-white dark:translate-x-3"></div>
+<!-- Svg bulan -->
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+</svg>
+
+    </div>
+</body>
+<script>
+    const checkbox = document.querySelector("#geser");
+    const html = document.querySelector("html");
+    checkbox.addEventListener("change", function () {
+        checkbox.checked
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    })
+    
+    function toDT() {
+        if localStorage.getItem("theme") === "dark") {
+            localStorage.getItem("theme","light");
+            document.documentElement.classList.remove("dark");
+        } else 
+        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark")
+        }
+        document.querySelector("button").addEventListener("click", toDT);
+        if localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+</script>
+</html>

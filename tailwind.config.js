@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{html,js}"],
   theme: {
+    darkMode:"class",
     extend: {
       fontFamily:{
       "Tions":"Tinos",
