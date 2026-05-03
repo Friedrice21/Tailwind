@@ -1,25 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
-    darkMode:"class",
     extend: {
-      fontFamily:{
-      "Tions":"Tinos",
-      
+      fontFamily: {
+        Tions: "Tinos",
       },
-      fontSize:{
-       besar:'200px', 
-       bintang:'10px',
+      fontSize: {
+        besar: "200px",
+        bintang: "10px",
       },
       backgroundImage: {
         kucing: 'url("Practice/kucing.jpeg")',
         freaky: 'url("practice/freaky.jfif:)',
         OIP: 'url("Practice2/OIP.jfif")',
-        man: 'url("Practice 6 filter/Challenge/man.jfif")'
-      }
+        man: 'url("Practice 6 filter/Challenge/man.jfif")',
+      },
     },
   },
   plugins: [],
-}
-
+};
