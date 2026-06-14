@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .kotak-merah {
+        @apply h-20 w-20 bg-red-500;
+    }
+}
+@plugin "daisyui";
+@import "tailwindcss";
